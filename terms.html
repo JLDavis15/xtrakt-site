@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — Xtrakt</title>
+<meta name="description" content="Terms of Service for Xtrakt — the agreement governing your use of the App.">
+<style>
+  :root {
+    --orange: #FF4500;
+    --ink: #1A1A2E;
+    --body: #2c2c3a;
+    --muted: #6b6b7a;
+    --rule: #e7e7ed;
+    --bg: #FAFAFA;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Charter', 'Iowan Old Style', 'Palatino', 'Georgia', serif;
+    background: var(--bg);
+    color: var(--body);
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  .header {
+    background: var(--ink);
+    color: white;
+    padding: 28px 0;
+    border-bottom: 4px solid var(--orange);
+  }
+  .header-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .logo-mark {
+    width: 38px;
+    height: 38px;
+    background: #232342;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .logo-mark svg { width: 26px; height: 26px; }
+  .header h1 {
+    font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: white;
+  }
+  .header .crumb {
+    font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 2px;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+  .doc-meta {
+    font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 36px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .doc-meta strong { color: var(--ink); font-weight: 600; }
+  h2 {
+    font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--ink);
+    margin: 44px 0 14px;
+    letter-spacing: -0.015em;
+    scroll-margin-top: 24px;
+  }
+  h2:first-of-type { margin-top: 0; }
+  h2::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 18px;
+    background: var(--orange);
+    margin-right: 12px;
+    vertical-align: -3px;
+    border-radius: 2px;
+  }
+  h3 {
+    font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 22px 0 8px;
+  }
+  p { margin: 0 0 14px; }
+  ul, ol { margin: 0 0 14px 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--orange); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { background: rgba(255, 69, 0, 0.08); }
+  .toc {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 40px;
+    font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+  }
+  .toc-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .toc ol { margin: 0; list-style: none; counter-reset: toc; padding-left: 0; }
+  .toc li {
+    counter-increment: toc;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .toc li::before {
+    content: counter(toc) ".";
+    color: var(--muted);
+    margin-right: 8px;
+    font-variant-numeric: tabular-nums;
+  }
+  .toc a { color: var(--ink); text-decoration: none; }
+  .toc a:hover { color: var(--orange); background: transparent; text-decoration: underline; }
+  .callout {
+    background: #fff7f3;
+    border-left: 3px solid var(--orange);
+    padding: 14px 18px;
+    margin: 18px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 15px;
+  }
+  .warning {
+    background: #fff9e6;
+    border-left: 3px solid #d4a017;
+    padding: 14px 18px;
+    margin: 18px 0;
+    border-radius: 0 6px 6px 0;
+    font-size: 15px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th {
+    background: #f3f3f6;
+    color: var(--ink);
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  td strong { color: var(--ink); }
+  .price-row td:nth-child(2),
+  .price-row td:nth-child(3) {
+    font-variant-numeric: tabular-nums;
+  }
+  .ALLCAPS {
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  footer {
+    background: var(--ink);
+    color: rgba(255,255,255,0.7);
+    padding: 28px 24px;
+    text-align: center;
+    font-family: -apple-system, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+  }
+  footer a { color: rgba(255,255,255,0.9); }
+  footer .sep { margin: 0 10px; color: rgba(255,255,255,0.3); }
+  @media (max-width: 600px) {
+    body { font-size: 16px; }
+    main { padding: 36px 20px 60px; }
+    .header h1 { font-size: 18px; }
+    h2 { font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo-mark">
+      <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="24" cy="24" r="14" stroke="white" stroke-width="5" fill="none"/>
+        <line x1="34" y1="34" x2="48" y2="48" stroke="white" stroke-width="5" stroke-linecap="round"/>
+        <line x1="24" y1="30" x2="24" y2="16" stroke="#FF4500" stroke-width="3.5" stroke-linecap="round"/>
+        <polyline points="17,22 24,14 31,22" fill="none" stroke="#FF4500" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div>
+      <h1>Xtrakt</h1>
+      <div class="crumb">Terms of Service</div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<div class="doc-meta">
+  <strong>Effective Date:</strong> May 14, 2026 &nbsp;·&nbsp; <strong>Last Updated:</strong> May 14, 2026 &nbsp;·&nbsp; <strong>Version:</strong> 1.2
+</div>
+
+<div class="toc">
+  <div class="toc-title">Contents</div>
+  <ol>
+    <li><a href="#agreement">Agreement to These Terms</a></li>
+    <li><a href="#service">The Service</a></li>
+    <li><a href="#eligibility">Eligibility & Account</a></li>
+    <li><a href="#subscription">Subscription, Trial & Pricing</a></li>
+    <li><a href="#cancellation">Cancellation & Refunds</a></li>
+    <li><a href="#acceptable-use">Acceptable Use</a></li>
+    <li><a href="#ai-content">AI-Generated Content</a></li>
+    <li><a href="#disclaimers">Disclaimers</a></li>
+    <li><a href="#liability">Limitation of Liability</a></li>
+    <li><a href="#indemnification">Indemnification</a></li>
+    <li><a href="#termination">Termination</a></li>
+    <li><a href="#apple">Apple-Specific Terms</a></li>
+    <li><a href="#governing-law">Governing Law & Disputes</a></li>
+    <li><a href="#changes">Changes to These Terms</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</div>
+
+<h2 id="agreement">1. Agreement to These Terms</h2>
+<p>These Terms of Service ("Terms") form a binding agreement between you and <strong>[ENTITY NAME]</strong> ("we," "us," or "our") governing your access to and use of the <strong>Xtrakt</strong> mobile application and any related services we provide (collectively, the "Service").</p>
+<p>By creating an account, accepting our in-App disclaimer, or otherwise using the Service, you agree to these Terms and to our <a href="/privacy">Privacy Policy</a>. If you do not agree, do not use the Service.</p>
+
+<div class="callout">
+  These Terms include an <strong>arbitration provision</strong> and a <strong>class action waiver</strong> (Section 13). Please read them carefully.
+</div>
+
+<h2 id="service">2. The Service</h2>
+<p>Xtrakt is an informational tool. You configure topics, keywords, or follow-ups that interest you. We monitor publicly available sources for changes related to those items and surface summaries inside the App. We also deliver push notifications when updates are detected.</p>
+<p>The Service uses artificial intelligence to generate summaries (see Section 7). The Service does not provide financial, legal, medical, tax, or any other professional advice.</p>
+
+<h2 id="eligibility">3. Eligibility & Account</h2>
+<p>To use the Service you must:</p>
+<ul>
+  <li>Be at least 13 years old, or the minimum age in your jurisdiction at which you can consent to a contract for online services without parental approval, whichever is greater.</li>
+  <li>Have legal capacity to enter into a binding agreement.</li>
+  <li>Not be prohibited from receiving the Service under applicable law.</li>
+</ul>
+<p>You are responsible for safeguarding your account credentials and for all activity that occurs under your account. Notify us immediately at <a href="mailto:support@xtraktapp.com">support@xtraktapp.com</a> if you suspect unauthorized access.</p>
+
+<h2 id="subscription">4. Subscription, Trial & Pricing</h2>
+
+<h3>4.1 Subscription Plans</h3>
+<p>Xtrakt offers two paid subscription tiers, each available with monthly or annual billing:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Plan</th>
+      <th>Monthly</th>
+      <th>Annual</th>
+      <th>What You Get</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="price-row">
+      <td><strong>Basic</strong></td>
+      <td>$10.99 USD</td>
+      <td>$115.99 USD</td>
+      <td>Up to 5 active Xtrakts (topics/keywords/follow-ups), push notification updates</td>
+    </tr>
+    <tr class="price-row">
+      <td><strong>Pro</strong></td>
+      <td>$21.99 USD</td>
+      <td>$229.99 USD</td>
+      <td>Up to 10 active Xtrakts, push notification updates, Weekly Brief synthesis</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Prices are in U.S. Dollars. Local currency, tax, and pricing may vary by region as set by Apple in the App Store. The price displayed on the App Store at the time of purchase is the authoritative price.</p>
+
+<h3>4.2 Free Trial</h3>
+<p>New users may be offered a 14-day free trial of the Basic tier. Trial eligibility is determined by Apple. If you start a trial:</p>
+<ul>
+  <li>You will not be charged during the trial period.</li>
+  <li>Your selected plan will begin and your account will be charged automatically at the end of the trial, unless you cancel before the trial ends.</li>
+  <li>You can cancel at any time during the trial through your App Store account settings.</li>
+</ul>
+
+<h3>4.3 Auto-Renewal</h3>
+<div class="warning">
+  <strong>Auto-renewal notice:</strong> Subscriptions automatically renew at the end of each billing period (monthly or annually, depending on your plan) at the then-current price unless you cancel at least 24 hours before the end of the current period. Your Apple ID will be charged for renewal within 24 hours prior to the end of the current period. You can manage and cancel your subscription in your App Store account settings.
+</div>
+
+<h3>4.4 Payment</h3>
+<p>All payments are processed by Apple through the App Store. We do not collect or store your payment card information. By subscribing, you authorize Apple to charge your payment method for the subscription fee and any applicable taxes.</p>
+
+<h3>4.5 Price Changes</h3>
+<p>We may change subscription prices. If we increase the price of your subscription, we will notify you at least 30 days in advance and you will have the opportunity to cancel before the change takes effect. Continued use after the new price takes effect constitutes acceptance.</p>
+
+<h2 id="cancellation">5. Cancellation & Refunds</h2>
+
+<h3>5.1 How to Cancel</h3>
+<p>You can cancel your subscription at any time through your Apple ID account settings:</p>
+<ol>
+  <li>Open the <strong>Settings</strong> app on your iPhone or iPad.</li>
+  <li>Tap your name at the top, then <strong>Subscriptions</strong>.</li>
+  <li>Select <strong>Xtrakt</strong> and tap <strong>Cancel Subscription</strong>.</li>
+</ol>
+<p>Cancellation prevents future renewals. You retain access to paid features until the end of your current billing period.</p>
+
+<h3>5.2 Refunds</h3>
+<p>All sales are final. We do not issue refunds directly. Refund requests for App Store purchases are handled by Apple. To request a refund, visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>. Apple's refund policies apply.</p>
+
+<h3>5.3 Account Deletion</h3>
+<p>You may delete your Xtrakt account at any time from within the App (Profile → Delete Account). Deleting your account ends your access to the Service. It does <em>not</em> automatically cancel your App Store subscription; you must cancel that separately through Apple as described in Section 5.1.</p>
+
+<h2 id="acceptable-use">6. Acceptable Use</h2>
+<p>You agree not to:</p>
+<ul>
+  <li>Use the Service for any unlawful, fraudulent, or harmful purpose.</li>
+  <li>Configure Xtrakts to monitor private information, harass individuals, or conduct surveillance of any person without lawful basis.</li>
+  <li>Attempt to access another user's account, data, or content.</li>
+  <li>Reverse engineer, decompile, or attempt to extract the source code of the App, except where this restriction is prohibited by applicable law.</li>
+  <li>Use the Service to develop a competing product or to train machine learning models.</li>
+  <li>Interfere with or disrupt the integrity or performance of the Service.</li>
+  <li>Circumvent any access controls, rate limits, or usage restrictions.</li>
+  <li>Resell, sublicense, or otherwise transfer your account or subscription.</li>
+</ul>
+
+<h2 id="ai-content">7. AI-Generated Content</h2>
+
+<h3>7.1 How Xtrakt Uses AI</h3>
+<p>The Service uses third-party AI (the Claude API from Anthropic, PBC) to produce summaries of publicly available content related to the topics you configure. See our <a href="/privacy#ai-processing">Privacy Policy, Section 5</a>, for what data is sent to the AI provider.</p>
+
+<h3>7.2 Limitations</h3>
+<div class="warning">
+  AI-generated content can be inaccurate, incomplete, outdated, or biased. It may contain factual errors, missing context, or fabricated details ("hallucinations"). Treat all AI-generated content as a starting point for your own research, not as a final, verified source.
+</div>
+
+<h3>7.3 Not Professional Advice</h3>
+<p>Nothing in the Service is professional advice. Specifically, AI-generated summaries on topics related to investing, securities, cryptocurrency, healthcare, law, regulation, or any other professional field are <strong>not</strong> investment advice, medical advice, legal advice, or any other form of professional guidance. Always consult a qualified professional before making decisions that have meaningful consequences.</p>
+
+<h3>7.4 Reporting Objectionable Content</h3>
+<p>If you encounter AI-generated content in the App that you believe is harmful, defamatory, illegal, or otherwise objectionable, please report it to <a href="mailto:support@xtraktapp.com">support@xtraktapp.com</a>. We review reports and may suppress specific content, adjust our prompts, or take other appropriate action. We do not guarantee that any particular content will be removed.</p>
+
+<h3>7.5 Content Moderation</h3>
+<p>We employ technical and operational measures to discourage the generation of harmful content. Notwithstanding those measures, you are responsible for evaluating the AI-generated content that appears in your account and for any decisions you make based on it.</p>
+
+<h2 id="disclaimers">8. Disclaimers</h2>
+<p class="ALLCAPS">The Service is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, whether express, implied, statutory, or otherwise. To the maximum extent permitted by applicable law, we disclaim all warranties, including the implied warranties of merchantability, fitness for a particular purpose, non-infringement, and any warranties arising out of course of dealing or usage of trade.</p>
+<p class="ALLCAPS">We do not warrant that the Service will be uninterrupted, timely, secure, error-free, or accurate; that defects will be corrected; or that the Service or the servers that make it available are free of viruses or other harmful components. We make no warranty as to the accuracy, reliability, completeness, or timeliness of AI-generated content or any other content available through the Service.</p>
+
+<h2 id="liability">9. Limitation of Liability</h2>
+<p class="ALLCAPS">To the maximum extent permitted by applicable law, in no event shall [ENTITY NAME], its affiliates, officers, directors, employees, agents, or licensors be liable for any indirect, incidental, special, consequential, exemplary, or punitive damages, including without limitation loss of profits, revenue, data, use, goodwill, or other intangible losses, arising out of or related to your use of or inability to use the Service.</p>
+<p class="ALLCAPS">Without limiting the foregoing, our total cumulative liability for all claims arising out of or relating to these Terms or the Service, regardless of the form of the action, is limited to the greater of (a) the amount you paid us for the Service in the twelve months immediately preceding the event giving rise to the claim, or (b) one hundred U.S. dollars ($100 USD).</p>
+<p>Some jurisdictions do not allow the limitation or exclusion of liability for incidental or consequential damages, so the above limitation may not apply to you in those jurisdictions. In such cases, our liability is limited to the maximum extent permitted by law.</p>
+
+<h2 id="indemnification">10. Indemnification</h2>
+<p>You agree to defend, indemnify, and hold harmless [ENTITY NAME] and its affiliates, officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorneys' fees) arising out of or in any way connected with: (a) your access to or use of the Service; (b) your violation of these Terms; (c) your violation of any third-party right, including any intellectual property, publicity, or privacy right; or (d) any claim that content you submitted or configured (including topics and follow-ups) caused damage to a third party.</p>
+
+<h2 id="termination">11. Termination</h2>
+<p>We may suspend or terminate your access to the Service, with or without notice, if we believe you have violated these Terms, engaged in fraud, or created risk or legal exposure for us, other users, or third parties. We may also discontinue the Service in whole or in part at any time.</p>
+<p>You may stop using the Service at any time. Sections 7 through 13 survive any termination of these Terms.</p>
+
+<h2 id="apple">12. Apple-Specific Terms</h2>
+<p>If you obtained the App through the Apple App Store, the following additional terms apply, and they prevail over any conflicting term elsewhere in these Terms:</p>
+<ul>
+  <li>These Terms are between you and [ENTITY NAME] only, not with Apple. Apple is not responsible for the App or its content.</li>
+  <li>Your license to use the App is limited to a non-transferable license to use the App on any Apple-branded device that you own or control, as permitted by the Apple Media Services Terms.</li>
+  <li>Apple has no obligation to provide maintenance or support services for the App.</li>
+  <li>Apple is not responsible for any product warranties, whether express or implied by law. In the event of any failure of the App to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price for the App, if any. To the maximum extent permitted by applicable law, Apple has no other warranty obligation whatsoever with respect to the App.</li>
+  <li>Apple is not responsible for addressing any claims by you or any third party relating to the App or your possession and use of the App, including product liability claims, claims that the App fails to conform to applicable legal or regulatory requirements, and consumer-protection or similar claims.</li>
+  <li>In the event of any third-party claim that the App or your use of it infringes intellectual property rights, [ENTITY NAME] (not Apple) will be solely responsible for investigation, defense, settlement, and discharge of that claim.</li>
+  <li>You represent that (a) you are not located in a country that is subject to a U.S. Government embargo or that has been designated by the U.S. Government as a "terrorist supporting" country, and (b) you are not listed on any U.S. Government list of prohibited or restricted parties.</li>
+  <li>Apple and its subsidiaries are third-party beneficiaries of these Terms. Upon your acceptance of these Terms, Apple has the right (and will be deemed to have accepted the right) to enforce these Terms against you as a third-party beneficiary.</li>
+</ul>
+
+<h2 id="governing-law">13. Governing Law & Disputes</h2>
+
+<h3>13.1 Governing Law</h3>
+<p>These Terms are governed by the laws of the State of Texas, USA, without regard to its conflict-of-laws principles.</p>
+
+<h3>13.2 Informal Resolution</h3>
+<p>Before filing a claim, you agree to try to resolve the dispute informally by contacting us at <a href="mailto:support@xtraktapp.com">support@xtraktapp.com</a>. We will try to resolve the dispute by contacting you. If a dispute is not resolved within 60 days of your notice, you or we may bring a formal proceeding.</p>
+
+<h3>13.3 Binding Arbitration</h3>
+<p>You and [ENTITY NAME] agree that any dispute, claim, or controversy arising out of or relating to these Terms or the Service will be resolved by binding arbitration administered by the American Arbitration Association under its Consumer Arbitration Rules. The arbitration will be conducted in Taylor County, Texas, or another mutually agreed location. The arbitrator's decision will be final and may be entered as a judgment in any court of competent jurisdiction. This arbitration agreement does not preclude either party from seeking injunctive relief in a court of competent jurisdiction for misuse of intellectual property.</p>
+
+<h3>13.4 Class Action Waiver</h3>
+<p class="ALLCAPS">You and [ENTITY NAME] agree that each may bring claims against the other only in your or its individual capacity and not as a plaintiff or class member in any purported class or representative proceeding. The arbitrator may not consolidate more than one person's claims and may not preside over any form of representative or class proceeding.</p>
+
+<h3>13.5 Exception for Small Claims</h3>
+<p>Notwithstanding the above, either party may bring an individual action in small claims court for disputes that qualify.</p>
+
+<h2 id="changes">14. Changes to These Terms</h2>
+<p>We may update these Terms from time to time. When we make material changes, we will update the "Effective Date" and "Version" at the top of this page and notify you within the App or by email at least 30 days before the change takes effect. If you continue using the Service after the effective date of the revised Terms, you accept the revised Terms. If you do not agree, you must stop using the Service and may cancel your subscription as described in Section 5.</p>
+
+<h2 id="contact">15. Contact</h2>
+<p>For questions about these Terms or the Service, contact us at:</p>
+<p>
+  <strong>[ENTITY NAME]</strong><br>
+  <strong>Attn:</strong> Legal<br>
+  <strong>[ENTITY ADDRESS]</strong><br>
+  <strong>Email:</strong> <a href="mailto:support@xtraktapp.com">support@xtraktapp.com</a>
+</p>
+
+</main>
+
+<footer>
+  <a href="/">Home</a>
+  <span class="sep">·</span>
+  <a href="/privacy">Privacy</a>
+  <span class="sep">·</span>
+  <a href="/terms">Terms</a>
+  <span class="sep">·</span>
+  <a href="mailto:support@xtraktapp.com">Contact</a>
+</footer>
+
+</body>
+</html>
